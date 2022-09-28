@@ -6,6 +6,9 @@
     padding: 0;
     font-family: 'Roboto',sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 div #offers, #language{
     display: none;
 }
@@ -36,7 +39,7 @@ nav {
     flex-wrap: nowrap;
 }
 section#comedouros{
-        background-image: url("./img/bowl-and-pet-daities-on-green-background1.png");
+        background-image: url("../img/bowl-and-pet-daities-on-green-background1.png");
         background-repeat: no-repeat;
         background-size:cover;
         height: 45.64994vh;
