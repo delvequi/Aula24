@@ -43,7 +43,7 @@ nav {
 }
 
 section#comedouros {
-  background-image: url("./img/bowl-and-pet-daities-on-green-background1.png");
+  background-image: url("../img/bowl-and-pet-daities-on-green-background1.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 45.64994vh;
@@ -206,7 +206,7 @@ footer div.holder {
   flex-direction: column;
 }
 footer div.logoFront {
-  background-image: url("./img/Logo.png");
+  background-image: url("../img/Logo.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 1.5rem;
