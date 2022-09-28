@@ -1,0 +1,452 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+div #offers, #language {
+  display: none;
+}
+
+nav {
+  width: 100vw;
+  height: 3.875rem;
+  background-color: #F0A83E;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 0.938rem;
+  color: #FFFFFF;
+}
+
+#navlinks {
+  display: none;
+}
+
+.mobilemenu {
+  display: flex;
+  width: 80vw;
+  height: 3.875rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+section#comedouros {
+  background-image: url("./img/bowl-and-pet-daities-on-green-background1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.64994vh;
+  width: 100vw;
+  display: flex;
+  justify-content: right;
+}
+
+#destaque {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 24vh;
+  margin: 7rem 2rem;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+#destaque h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 2.188rem;
+  text-align: center;
+  color: #3C2313;
+  background-color: #FFFFFF;
+  background-size: 22.813rem 3.375rem;
+  border-radius: 0.313rem;
+  padding: 1.25rem 1.25rem;
+}
+#destaque h2 {
+  display: none;
+}
+
+#produtosdestacados {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.produt1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 30vh;
+  width: 85vw;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-bottom: 2rem;
+}
+.produt1 .pDestacados {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2.938rem;
+  color: corDestaque;
+  text-align: center;
+}
+.produt1 .itensPet {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 1.125rem;
+  /* identical to box height */
+  color: corPet;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.churrasquito, .comedouro, .ossinho {
+  display: flex;
+  background-color: #FBFAF6;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.churrasquito span, .comedouro span, .ossinho span {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 0.9rem;
+  color: #3C2313;
+  background: #FBFAF6;
+  height: 2rem;
+  width: auto;
+  text-align: center;
+}
+.churrasquito span#price, .comedouro span#price, .ossinho span#price {
+  color: #F0A83E;
+}
+
+.formulario {
+  display: flex;
+  height: 40vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.formulario form {
+  display: flex;
+  flex-direction: row;
+  height: 24vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.formulario h6 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2.938rem;
+  color: #3C2313;
+}
+.formulario input {
+  width: 18.625rem;
+  height: 2.5rem;
+  background-color: #3C2313;
+  border-radius: 0.938rem;
+  border-style: none;
+}
+.formulario ::-moz-placeholder {
+  color: #AB9C9C;
+  padding: 1rem;
+}
+.formulario :-ms-input-placeholder {
+  color: #AB9C9C;
+  padding: 1rem;
+}
+.formulario ::placeholder {
+  color: #AB9C9C;
+  padding: 1rem;
+}
+.formulario button, .formulario button#clean {
+  width: 12.438rem;
+  height: 2.813rem;
+  border-radius: 1.563rem;
+  border-style: none;
+  margin-top: 2rem;
+}
+.formulario button#clean {
+  background-color: #8A8787;
+  color: #FFFFFF;
+}
+.formulario button#send {
+  background-color: #F0A83E;
+}
+
+footer {
+  background-color: #3C2313;
+}
+footer div.holder {
+  display: flex;
+  flex-direction: column;
+}
+footer div.logoFront {
+  background-image: url("./img/Logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  margin-top: 1rem;
+  width: 100vw;
+}
+footer section.mailf {
+  display: flex;
+  height: 12vh;
+  background-color: #F0A83E;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+}
+footer section.mailf span#inscrever {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.438rem;
+  color: #FFFFFF;
+}
+footer section.mailf form {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  justify-content: space-between;
+}
+footer section.mailf input#carta {
+  width: 16.313rem;
+  height: 4vh;
+  background-color: #FFFFFF;
+  border-radius: 0.9rem;
+  border-style: none;
+}
+footer ::-moz-placeholder {
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: #AB9C9C;
+  padding: 1rem;
+}
+footer :-ms-input-placeholder {
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: #AB9C9C;
+  padding: 1rem;
+}
+footer ::placeholder {
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: #AB9C9C;
+  padding: 1rem;
+}
+footer button#envio {
+  width: 6.25rem;
+  border-radius: 0.9rem;
+  border-style: none;
+  background-color: #3C2313;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.125rem;
+  color: #FFFFFF;
+}
+footer section.faleconosco {
+  display: flex;
+  background-color: #3C2313;
+  justify-content: center;
+}
+footer section.faleconosco div.icons {
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-right: 1.5rem;
+}
+footer section.faleconosco div#ListaC {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+footer section.faleconosco div.localizacao ul, footer section.faleconosco div.Tel ul, footer section.faleconosco div.Mailto ul {
+  list-style-type: none;
+}
+footer section.faleconosco div.localizacao li.titulo, footer section.faleconosco div.Tel li.titulo, footer section.faleconosco div.Mailto li.titulo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #FFFFFF;
+}
+footer section.faleconosco div.localizacao li.subtitulo, footer section.faleconosco div.Tel li.subtitulo, footer section.faleconosco div.Mailto li.subtitulo {
+  font-weight: 700;
+  font-size: 0.813rem;
+  line-height: 0.938rem;
+  color: #8A8787;
+}
+footer div.copyright {
+  background-color: #222222;
+  height: 1.8rem;
+  color: #FFFFFF;
+  font-size: 0.813rem;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+@media (min-width: 1200px) {
+  div#bar {
+    background-color: #222222;
+    display: flex;
+    height: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div#bar div#offers {
+    display: flex;
+  }
+  div#bar div#offers h6 {
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    font-weight: 400;
+    color: #F3F3F3;
+    margin-left: 8rem;
+  }
+  div#bar div#language {
+    display: flex;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    font-weight: 400;
+    color: #F3F3F3;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 3rem;
+  }
+  nav div.mobilemenu img.menuicon {
+    display: none;
+  }
+  nav div.mobilemenu img.logoImg {
+    margin-left: 3rem;
+  }
+  nav ul#navlinks {
+    display: flex;
+    width: 60vw;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  nav ul#navlinks li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.813rem;
+    line-height: 0.938rem;
+    font-weight: 400;
+  }
+  section#comedouros div#destaque {
+    align-items: center;
+  }
+  section#comedouros div#destaque h2 {
+    display: flex;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.188rem;
+    text-align: center;
+  }
+  #cards {
+    display: flex;
+    width: 90vw;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+  }
+  #cards .products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #cards .products .churrasquito, #cards .products .comedouro, #cards .products .ossinho {
+    display: flex;
+    background-color: #FBFAF6;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 30px 0 0;
+  }
+  .formulario form {
+    display: flex;
+    flex-direction: row;
+    height: 24vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 35vw;
+  }
+  .formulario form input {
+    width: 21.25rem;
+    height: 2.5rem;
+  }
+  .formulario form button#clean, .formulario form button#send {
+    width: 6.875rem;
+    height: 2.125rem;
+  }
+  footer div.logoFront {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1.5rem;
+    width: 15vw;
+  }
+  footer div.holder {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    width: 100vw;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer section.mailf {
+    display: flex;
+    height: 8vh;
+    background-color: #F0A83E;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  footer section.mailf span#inscrever {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.438rem;
+    color: #FFFFFF;
+    margin-right: 20rem;
+  }
+  footer section.mailf form {
+    display: flex;
+    width: 35vw;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  footer section.mailf form button#envio {
+    margin-right: 3rem;
+  }
+  footer section.mailf img.emailIcon {
+    margin-left: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,433 @@
+@import "colors";
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+div #offers, #language{
+    display: none;
+}
+nav {
+    width: 100vw;
+    height: 3.875rem;
+    background-color: $corFundo;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.625rem;
+    line-height: 0.938rem;
+    color: $corPrimaria;
+}
+#navlinks{
+    display: none;
+}
+.mobilemenu {
+    display: flex;
+    width: 80vw;
+    height: 3.875rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+section#comedouros{
+        background-image: url("./img/bowl-and-pet-daities-on-green-background1.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 45.64994vh;
+        width:100vw;    
+        display: flex;
+        justify-content:right;
+}
+#destaque{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 24vh;
+    margin: 7rem 2rem;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    h1 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 2.188rem;
+        text-align: center;
+        color: $corDestaque;
+        background-color: $corPrimaria;
+        background-size: 22.813rem 3.375rem;
+        border-radius: 0.313rem;
+        padding: 1.25rem 1.25rem;
+    }
+    h2{
+        display: none;
+    }
+}
+#produtosdestacados{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.produt1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 30vh;
+    width: 85vw;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-bottom: 2rem;
+    .pDestacados{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 2.938rem;
+        color: corDestaque;
+        text-align: center;
+    }
+    .itensPet{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.938rem;
+        line-height: 1.125rem;
+        /* identical to box height */
+        color: corPet;
+    }
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.churrasquito, .comedouro, .ossinho{
+    display: flex;
+    background-color: #FBFAF6;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 30px;
+    span{
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 0.9rem;
+        color: $corDestaque;
+        background: $corBackground;
+        height: 2rem;
+        width: auto;
+        text-align: center;
+    }
+    span#price{
+        color: $corFundo;
+    }
+}
+.formulario{
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    form{
+        display: flex;
+        flex-direction: row;
+        height: 24vh;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    h6{
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 2.938rem;
+        color: $corDestaque;
+    }
+    input{
+        width: 18.625rem;
+        height: 2.5rem;
+        background-color: $corDestaque;
+        border-radius: 0.938rem;
+        border-style: none;
+    }
+    ::placeholder{
+        color:$corPlaceholder;
+        padding: 1rem;
+    }
+    button{
+        width: 12.438rem;
+        height: 2.813rem;
+        border-radius: 1.563rem;
+        border-style: none;
+        margin-top: 2rem; 
+        &#clean{
+            @extend button;
+            background-color:$corClearButton;
+            color: $corPrimaria;
+        }
+        &#send{
+            background-color: $corFundo;
+        }
+    }
+}
+    footer{
+        background-color: $corDestaque;
+        div.holder{
+            display: flex;
+            flex-direction: column;
+        }
+        div.logoFront{
+            background-image: url("./img/Logo.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 1.5rem;
+            margin-top: 1rem;
+            width: 100vw;
+        }
+        section.mailf{
+            display: flex;
+            height: 12vh;
+            background-color: $corFundo;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            align-content: center;
+            span#inscrever{
+                font-weight: 700;
+                font-size: 1.25rem;
+                line-height: 1.438rem;
+                color: $corPrimaria;
+            }
+        form{
+            display: flex;
+            flex-direction: row;
+            width: 90vw;
+            justify-content: space-between;
+        }
+        input#carta{
+            width: 16.313rem;
+            height: 4vh;
+            background-color: $corPrimaria;
+            border-radius: 0.9rem;
+            border-style: none;
+            }
+        }    
+        ::placeholder{
+            font-size: 0.625rem;
+            line-height: 0.75rem;
+            color: $corPlaceholder;
+            padding: 1rem;
+        }
+        button#envio{
+            width: 6.25rem;
+            border-radius: 0.9rem;
+            border-style: none;
+            background-color: $corDestaque;
+            font-weight: 700;
+            font-size: 0.9rem;
+            line-height: 1.125rem;
+            color: $corPrimaria;
+        }
+        section.faleconosco{
+            display: flex;
+            background-color: $corDestaque;
+            justify-content: center;
+            div.icons{
+                display: flex;
+                flex-direction: column;
+                height: 35vh;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                margin-right: 1.5rem;
+            }
+            div#ListaC{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: flex-start;
+            }
+            div.localizacao, div.Tel, div.Mailto{
+                ul{
+                    list-style-type: none;
+                }
+                li.titulo{
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    line-height: 1.75rem;
+                    color: $corPrimaria;
+                }
+                li.subtitulo{
+                    font-weight: 700;
+                    font-size: 0.813rem;
+                    line-height: 0.938rem;
+                    color: $corClearButton;
+                }
+            }
+        }       
+            div.copyright{
+            background-color: $corDarkGrey;
+            height: 1.8rem;
+            color: $corPrimaria;
+            font-size: 0.813rem;
+            text-align: center;
+            line-height: 1.8rem;
+            }            
+} 
+@media (min-width:1200px){
+    div#bar{
+        background-color: $corDarkGrey;
+        display: flex;
+        height: 1.25rem;
+        justify-content: space-between;
+        align-items: center;
+    div#offers{
+        display: flex;
+        h6{
+            font-size: 0.625rem;
+            line-height: 0.75rem;
+            font-weight: 400;
+            color: $corHeader;
+            margin-left: 8rem;
+        }
+    }
+    div#language{
+    display: flex;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    font-weight: 400;
+    color: $corHeader;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 3rem;
+    }
+    }
+    nav{
+        div.mobilemenu{
+            img.menuicon{
+                display: none;
+            }
+            img.logoImg{
+                margin-left: 3rem;
+            }
+        }
+        ul#navlinks{
+            display: flex;
+            width: 60vw;
+            list-style-type: none;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            li a{
+                color:$corPrimaria;
+                text-decoration: none;
+                font-size: 0.813rem;
+                line-height: 0.938rem;
+                font-weight: 400;
+            }
+        }
+    }
+    section#comedouros{
+        div#destaque{
+            align-items: center;
+            h2{
+                display: flex;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.188rem;
+                text-align: center;
+            }
+        }
+    }
+    #cards{
+        display: flex;
+        width: 90vw;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        .products {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            .churrasquito, .comedouro, .ossinho {
+                display: flex;
+                background-color: #FBFAF6;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+                margin: 0 30px 0 0;
+            }
+        }
+    }
+    .formulario form {
+        display: flex;
+        flex-direction: row;
+        height: 24vh;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+        width: 35vw;
+        input{
+            width: 21.25rem;
+            height: 2.5rem;    
+    }
+        button#clean, button#send{
+            width: 6.875rem;
+            height: 2.125rem;
+        } 
+}
+    footer{
+        div.logoFront {
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 1.5rem;
+            width: 15vw;
+        }
+        div.holder{
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: nowrap;
+            width: 100vw;
+            align-content: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+        section.mailf {
+            display: flex;
+            height: 8vh;
+            background-color: $corFundo;
+            flex-direction: row;
+            justify-content: space-evenly;
+            span#inscrever {
+                font-weight: 700;
+                font-size: 1.25rem;
+                line-height: 1.438rem;
+                color: $corPrimaria;
+                margin-right: 20rem;
+            }
+            form {
+                display: flex;
+                width: 35vw;
+                justify-content: space-between;
+                flex-direction: row;
+                button#envio{
+                    margin-right: 3rem;
+                }
+            }
+            img.emailIcon{
+                margin-left:1rem;
+            }
+        }
+    }
+}
